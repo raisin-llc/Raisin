@@ -15,7 +15,7 @@ export default function Home() {
       <LogoTicker />
       <ProductShowcase />
       {/* <Pricing /> */}
-      {/* <Testimonials /> */}
+      <Testimonials />
       <CallToAction />
       <Footer />
     </>
