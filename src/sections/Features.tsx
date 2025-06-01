@@ -30,7 +30,7 @@ const Features = () => {
 
     return (
         <>
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 p-8 lg:p-12">
+            <div className="flex flex-col lg:flex-row items-center justify-center p-8 lg:p-12">
                 {numbers.map((number, index) => (
                     <div key={`step-wrapper-${number}`} className="flex flex-col lg:flex-row items-center">
                         {/* Interactive element: Circle + Title */}
