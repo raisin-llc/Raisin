@@ -1,9 +1,27 @@
+"use client";
+
 import ArrowRight from "@/assets/arrow-right.svg";
 import Logo from "@/assets/logosaas.png";
 import MenuIcon from "@/assets/menu.svg";
 import Image from "next/image";
 
 export const Header = () => {
+
+  // ✅ Move scroll function INSIDE the component
+  const scrollToSection = (id: any) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const rect = element.getBoundingClientRect();
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollTo = rect.top + scrollTop - (window.innerHeight / 2) + (rect.height / 2);
+
+      window.scrollTo({
+        top: scrollTo,
+        behavior: "smooth"
+      });
+    }
+  };
+
   return (
     <header className="sticky top-0 backdrop-blur-sm z-20">
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
@@ -22,8 +40,20 @@ export const Header = () => {
 
             <nav className="hidden md:flex gap-6 text-black/60 items-center">
               <a href="#">About</a>
-              <a href="#">Features</a>
-              <a href="#">Customers</a>
+              <a
+                href="#features"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("features");
+                }}
+              >Features</a>
+              <a
+                href="#customers"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("customers");
+                }}
+              >Customers</a>
               {/* <a href="#">Updates</a> */}
               <a href="#">Help</a>
               <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight">Contact Us</button>
