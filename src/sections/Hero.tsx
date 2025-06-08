@@ -36,11 +36,11 @@ export const Hero = () => {
           <div className="md:w-[478px]">
             <div className="tag">Version 2.0 is here</div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tigher bg-gradient-to-b from-black to-[#001e80] text-transparent bg-clip-text mt-6">
-              Pathway to productivity
+              Hire at hyperspeed
             </h1>
             <p className="text-xl text-[#010d3e] tracking-tight mt-6">
-              Celebrate the joy of accomplishment with an app designed to track
-              your progress, motivate your efforts, and celebrate your success.
+              AI screens 1,000 applicants in minutes, slashing hiring time by 70%. Precision algorithms rank talent by skills, culture fit, and potential. 
+              Built for enterprises—integrate seamlessly, eliminate bias, and scale effortlessly.
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
               <button className="btn btn-primary">Join for free</button>

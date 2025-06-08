@@ -43,8 +43,7 @@ const iconVariants = {
         <div className="section-heading relative">
           <h2 className="section-title">Book A meeting today</h2>
           <p className="section-description mt-5">
-            Celebrate the joy of accomplishment with an app designed to track
-            your progress and motivate your efforts.
+            Schedule a 15-minute call and see how AI screens 1,000 applicants in 30 minutes. Your coffee break just got productive.
           </p>
           <motion.img
             src={starImage.src}

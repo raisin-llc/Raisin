@@ -27,11 +27,10 @@ export const ProductShowcase = () => {
             <div className="tag">Boost your productivity</div>
           </div>
           <h2 className="section-title mt-5">
-            A more effective way to track progress
+            A cost-effective way to manage applicants
           </h2>
           <p className="section-description mt-5">
-            Effortlessly turn your ideas into a fully functional, response, SaaS
-            website in just minutes with this template.
+            Maximize recruitment ROI with AI that replaces spreadsheets, automates screening, and spots top talent fast—where budgets meet innovation.
           </p>
         </div>
         <div className="relative">
