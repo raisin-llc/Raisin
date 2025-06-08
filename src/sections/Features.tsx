@@ -14,11 +14,11 @@ interface ProcessDetail {
 }
 
 const processDetails: Record<StepNumber, ProcessDetail> = {
-  1: { title: "Planning", description: "Strategic planning and analysis phase", icon: "📋", color: "from-blue-400 to-blue-600" },
-  2: { title: "Design", description: "Creative design and user experience", icon: "🎨", color: "from-purple-400 to-purple-600" },
-  3: { title: "Development", description: "Code implementation and building", icon: "💻", color: "from-green-400 to-green-600" },
-  4: { title: "Testing", description: "Quality assurance and testing", icon: "🔍", color: "from-orange-400 to-orange-600" },
-  5: { title: "Launch", description: "Deployment and go-live process", icon: "🚀", color: "from-red-400 to-red-600" }
+  1: { title: "Brodcast", description: "Strategic planning and analysis phase", icon: "📋", color: "from-blue-400 to-blue-600" },
+  2: { title: "Pre-screening", description: "Creative design and user experience", icon: "🎨", color: "from-purple-400 to-purple-600" },
+  3: { title: "Interview", description: "Code implementation and building", icon: "💻", color: "from-green-400 to-green-600" },
+  4: { title: "Process", description: "Quality assurance and testing", icon: "🔍", color: "from-orange-400 to-orange-600" },
+  5: { title: "On-Boarding", description: "Deployment and go-live process", icon: "🚀", color: "from-red-400 to-red-600" }
 };
 
 const Features = () => {
@@ -35,12 +35,12 @@ const Features = () => {
                     <div key={`step-wrapper-${number}`} className="flex flex-col lg:flex-row items-center">
                         {/* Interactive element: Circle + Title */}
                         <motion.div 
-                            className="flex flex-col items-center cursor-pointer group"
+                            className="flex flex-col items-center cursor-pointer group font-inter"
                             onMouseEnter={() => setHoveredNumber(number)}
                             onMouseLeave={() => setHoveredNumber(null)}
                         >
                             <motion.div 
-                                className={`w-20 h-20 bg-gradient-to-br ${processDetails[number].color} text-white rounded-full flex items-center justify-center font-bold text-3xl shadow-lg mb-3`}
+                                className={`w-20 h-20 bg-gradient-to-br ${processDetails[number].color} text-white rounded-full flex items-center justify-center font-bold text-3xl shadow-lg mb-3 shadows`}
                                 initial={{ scale: 1 }}
                                 animate={{ 
                                     scale: hoveredNumber === number ? 1.3 : 1,
@@ -68,7 +68,7 @@ const Features = () => {
                                     scale: hoveredNumber === number ? 1.1 : 1,
                                     color: hoveredNumber === number ? "#1F2937" : "#6B7280"
                                 }}
-                                transition={{ duration: 0.3 }}
+                                // transition={{ duration: 0.5 }}
                             >
                                 {processDetails[number].title}
                             </motion.h4>

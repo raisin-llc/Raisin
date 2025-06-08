@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face { 
+  font-family: "Inter-Sans";
+  src:url("../assets/fonts/Inter.ttf");
+}
+
 @layer components {
   .btn {
     @apply bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight;
@@ -32,3 +37,13 @@
   }
   
 }
+
+.font-inter{
+  font-family: "Inter-Sans";
+}
+
+/*button or element shadow*/
+.shadows{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
