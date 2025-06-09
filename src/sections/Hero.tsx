@@ -43,11 +43,11 @@ export const Hero = () => {
               Built for enterprises—integrate seamlessly, eliminate bias, and scale effortlessly.
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
-              <button className="btn btn-primary">Join for free</button>
-              <button className="btn btn-text gap-1">
+              <button className="btn btn-primary">Book a Demo</button>
+              {/* <button className="btn btn-text gap-1">
                 <span>Learn more</span>
                 <ArrowIcon className="h-5 w-5" />
-              </button>
+              </button> */}
             </div>
           </div>
 

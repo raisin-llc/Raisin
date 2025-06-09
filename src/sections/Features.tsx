@@ -14,8 +14,8 @@ interface ProcessDetail {
 }
 
 const processDetails: Record<StepNumber, ProcessDetail> = {
-  1: { title: "Brodcast", description: "Strategic planning and analysis phase", icon: "📋", color: "from-blue-400 to-blue-600" },
-  2: { title: "Pre-screening", description: "Creative design and user experience", icon: "🎨", color: "from-purple-400 to-purple-600" },
+  1: { title: "Brodcast", description: "Strategic planning and analysis phase", icon: "../assets/marketing.png", color: "from-blue-400 to-blue-600" },
+  2: { title: "Pre-screening", description: "Creative design and user experience", icon: "../assets/", color: "from-purple-400 to-purple-600" },
   3: { title: "Interview", description: "Code implementation and building", icon: "💻", color: "from-green-400 to-green-600" },
   4: { title: "Process", description: "Quality assurance and testing", icon: "🔍", color: "from-orange-400 to-orange-600" },
   5: { title: "On-Boarding", description: "Deployment and go-live process", icon: "🚀", color: "from-red-400 to-red-600" }
