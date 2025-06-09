@@ -134,7 +134,7 @@ const Features = () => {
                         >
                             {/* Content */}
                             <div className="bg-gradient-to-r from-gray-50 to-white rounded-xl p-8 shadow-2xl border border-gray-100">
-                                <div className="text-center">
+                                <div className="text-center font-inter">
                                     <motion.div 
                                         className="text-6xl mb-4"
                                         initial={{ scale: 0 }}
